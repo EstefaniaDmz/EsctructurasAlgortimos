@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A56919D5-FB84-46CD-BD44-375C05F28F83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoEstructuras</RootNamespace>
+    <AssemblyName>ProyectoEstructuras</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArbolBinario.cs" />
+    <Compile Include="ArbolBinarioOrdenado.cs" />
+    <Compile Include="ArbolTDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArbolTDA.Designer.cs">
+      <DependentUpon>ArbolTDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bicola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bicola.Designer.cs">
+      <DependentUpon>Bicola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Burbuja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Burbuja.Designer.cs">
+      <DependentUpon>Burbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BurbujaBidireccional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BurbujaBidireccional.Designer.cs">
+      <DependentUpon>BurbujaBidireccional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CBicola.cs" />
+    <Compile Include="CCola.cs" />
+    <Compile Include="CColaCircular.cs" />
+    <Compile Include="CColaPrioridad.cs" />
+    <Compile Include="CGrafos.cs" />
+    <Compile Include="CListaSimpleCircular.cs" />
+    <Compile Include="CListaDoble.cs" />
+    <Compile Include="CListaDobleCircular.cs" />
+    <Compile Include="CListaSimple.cs" />
+    <Compile Include="ColaCircular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColaCircular.Designer.cs">
+      <DependentUpon>ColaCircular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColaPrioridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColaPrioridad.Designer.cs">
+      <DependentUpon>ColaPrioridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColaSimple.Designer.cs">
+      <DependentUpon>ColaSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COrdenamientoAB.cs" />
+    <Compile Include="Countingsort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Countingsort.Designer.cs">
+      <DependentUpon>Countingsort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPila.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafo.cs" />
+    <Compile Include="Grafos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafos.Designer.cs">
+      <DependentUpon>Grafos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inserccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inserccion.Designer.cs">
+      <DependentUpon>Inserccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSimpleCircular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSimpleCircular.Designer.cs">
+      <DependentUpon>ListaSimpleCircular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDoble.Designer.cs">
+      <DependentUpon>ListaDoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDobleCircular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDobleCircular.Designer.cs">
+      <DependentUpon>ListaDobleCircular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSimple.Designer.cs">
+      <DependentUpon>ListaSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MezclaDirecta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MezclaDirecta.Designer.cs">
+      <DependentUpon>MezclaDirecta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nodo.cs" />
+    <Compile Include="NodoAD.cs" />
+    <Compile Include="NodoArbol.cs" />
+    <Compile Include="NodoP.cs" />
+    <Compile Include="OrdenamientoABcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenamientoABcs.Designer.cs">
+      <DependentUpon>OrdenamientoABcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pila.Designer.cs">
+      <DependentUpon>Pila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quicksorting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quicksorting.Designer.cs">
+      <DependentUpon>Quicksorting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadixSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadixSort.Designer.cs">
+      <DependentUpon>RadixSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Selectionsort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selectionsort.Designer.cs">
+      <DependentUpon>Selectionsort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShellSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShellSort.Designer.cs">
+      <DependentUpon>ShellSort.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ArbolTDA.resx">
+      <DependentUpon>ArbolTDA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bicola.resx">
+      <DependentUpon>Bicola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Burbuja.resx">
+      <DependentUpon>Burbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BurbujaBidireccional.resx">
+      <DependentUpon>BurbujaBidireccional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColaCircular.resx">
+      <DependentUpon>ColaCircular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColaPrioridad.resx">
+      <DependentUpon>ColaPrioridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColaSimple.resx">
+      <DependentUpon>ColaSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Countingsort.resx">
+      <DependentUpon>Countingsort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafos.resx">
+      <DependentUpon>Grafos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inserccion.resx">
+      <DependentUpon>Inserccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSimpleCircular.resx">
+      <DependentUpon>ListaSimpleCircular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDoble.resx">
+      <DependentUpon>ListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDobleCircular.resx">
+      <DependentUpon>ListaDobleCircular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSimple.resx">
+      <DependentUpon>ListaSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MezclaDirecta.resx">
+      <DependentUpon>MezclaDirecta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenamientoABcs.resx">
+      <DependentUpon>OrdenamientoABcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pila.resx">
+      <DependentUpon>Pila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Quicksorting.resx">
+      <DependentUpon>Quicksorting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadixSort.resx">
+      <DependentUpon>RadixSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selectionsort.resx">
+      <DependentUpon>Selectionsort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShellSort.resx">
+      <DependentUpon>ShellSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
